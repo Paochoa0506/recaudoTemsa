@@ -1,0 +1,153 @@
+<!DOCTYPE html><!-- Indica que es HTML5 -->
+<html lang="en"><!-- Para indicar lenguaje inglés --> 
+    <head><!-- Encabezado -->
+        <meta charset="UTF-8"><!-- Sintaxis para caracteres especiales-->
+        <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+        <title>Menú Administrador</title>
+
+        <!-- Referencias de paquetes con etiquetas de diseño-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estiloMenuAdmin.css">
+        <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                  <li class="nav-item">
+                      <form>
+                        <button type="submit" class="btn btn-logout">
+                            <a class="nav-link" href="index.html">
+                                <img src="img/logout.png" width="25" height="25">Cerrar Sesión
+                            </a>
+                        </button>
+                      </form>                      
+                  </li>
+              </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <blockquote class="blockquote text-center">
+                    <h1 class="display-4">Menú Principal - Administrador</h1>
+                    <cite title="Source Title">
+                        Contenido de todas las Bases de Datos y Backup mensual.
+                    </cite>                    
+                </blockquote>               
+            </div>
+        </div>
+
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">Menú Principal</li>
+                </ol>
+            </nav>
+            <div class="d-flex flex-wrap flex-row-reverse">
+                <div class="card card-hotel mb-3 justify-content-between ml-4">
+                    <div class="card-header">
+                        Base de Datos<br>
+                        Conductores.
+                    </div>
+                    <div class="card-body">
+                        <img src="img/conductor.png" width="120" height="120">  
+                    </div>
+                    <div>
+                        <a href="bdConductores.html" class="btn btn-secondary btn-lg btn-block" 
+                        role="button" aria-pressed="true">Consultar</a>
+                    </div>          
+                </div>
+                <div class="card card-hotel card mb-3 justify-content-between ml-4">
+                    <div class="card-header">
+                        Base de Datos<br>
+                        Vehículos.
+                    </div>
+                    <div class="card-body">
+                      <img src="img/autobus.jpg" width="120" height="120">  
+                    </div>
+                    <div>
+                        <a href="bdVehiculos.html" class="btn btn-secondary btn-lg btn-block" 
+                        role="button" aria-pressed="true">Consultar</a>
+                    </div>          
+                </div>
+                <div class="card card-hotel mb-3 justify-content-between ml-4">
+                    <div class="card-header">
+                        Base de Datos<br>
+                        Rutas.
+                    </div>
+                    <div class="card-body">
+                      <img src="img/ruta.png" width="120" height="120">  
+                    </div>
+                    <div>
+                      <button type="button" class="btn btn-secondary btn-lg btn-block">Consultar</button>
+                    </div>          
+                </div>            
+                <div class="card card-hotel mb-3 justify-content-between ml-4">
+                    <div class="card-header">
+                        Base de Datos<br>
+                        Usuarios.
+                    </div>
+                    <div class="card-body">
+                        <img src="img/usuario.jpg" width="120" height="120">  
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block">Consultar</button>
+                    </div>          
+                </div>
+                <div class="card card-hotel mb-3 justify-content-between ml-4">
+                    <div class="card-header">
+                        Base de Datos<br>
+                        Liquidaciones.
+                    </div>
+                    <div class="card-body">
+                        <img src="img/liquidacion.png" width="120" height="120">  
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block">Consultar</button>
+                    </div>          
+                </div>
+                <div class="card card-hotel mb-3 justify-content-between ml-4">
+                    <div class="card-header">
+                        Base de Datos<br>
+                        Día.
+                    </div>
+                    <div class="card-body">
+                        <img src="img/dia.png" width="120" height="120">  
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block">Consultar</button>
+                    </div>          
+                </div>                
+            </div>                      
+        </div>        
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="d-flex flex-wrap flex-row">
+                    <div class="card card-hotel mb-3 justify-content-between ml-4">
+                        <div class="card-header">
+                            Copia de respaldo
+                        </div>
+                        <div class="card-body">
+                            <img src="img/backup.png" width="120" height="120">  
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-secondary btn-lg btn-block" role="button" aria-pressed="true">Backup</a>
+                        </div>          
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src="img/logotemsa.png" width="100" height="40">
+        </footer>
+    </body>
+</html>

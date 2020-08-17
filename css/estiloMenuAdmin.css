@@ -1,0 +1,52 @@
+.jumbotron{
+	background-color: rgb(9, 26, 82);
+	color: white;
+	padding-bottom: 0%;
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-right: 1%;	
+}
+
+body{
+	background-color: white;
+}
+
+cite{
+	color: rgb(136, 136, 136);
+}
+
+.card-header{
+	background-color: rgb(9, 26, 82);
+	color: white;
+	text-align: center;
+}
+
+.card{
+	margin-left: 1px;
+}
+
+.d-flex{
+	padding-left: 1px;
+}
+
+.row{
+	padding-left: 1px;
+}
+
+.container{
+	padding-left: 0.1px;
+}
+
+footer{
+	background-color: rgb(9, 26, 82);
+	color: white;
+}
+
+.navbar{
+	padding-bottom: 0%;
+	padding-top: 0%;
+}
+
+.btn-logout{
+	color: rgb(136, 136, 136);
+}

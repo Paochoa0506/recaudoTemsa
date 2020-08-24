@@ -61,7 +61,7 @@ input{
 	font-size: 20px;/*para que el boton sea redondo*/
 	margin-bottom:0;
 }
-input[type="submit"]{/*se refiere a que en este formulario este boton va a eniar datos*/
+input[type="button"]{/*se refiere a que en este formulario este boton va a enviar datos*/
 	background:linear-gradient(#000000,#999999);/*para el degradado de colores*/
 	color:white;
 	opacity:0.7;
@@ -69,10 +69,10 @@ input[type="submit"]{/*se refiere a que en este formulario este boton va a eniar
 	border-radius:20px;	
 }
 
-input[type="submit"]:hover{/*seudoclase o efecto al pasar el mouse*/
+input[type="button"]:hover{/*seudoclase o efecto al pasar el mouse*/
 	opacity:1;
 }
-input[type="submit"]:active{/*efecto al presionar el boton*/
+input[type="button"]:active{/*efecto al presionar el boton*/
 	transform:scale(0.95);/*se reduce el tamaño*/
 }
 

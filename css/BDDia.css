@@ -1,8 +1,8 @@
 .jumbotron{
 	background-color: rgb(9, 26, 82);
 	color: white;
-	padding-bottom: 1%;
-	padding-top: 2%;
+	padding-bottom: 0%;
+	padding-top: 1%;
 	padding-left: 1%;
 	padding-right: 1%;	
 }
@@ -22,7 +22,7 @@ cite{
 }
 
 .card{
-	margin-left: 1px;
+	margin-left: 8%;
 }
 
 .d-flex{
@@ -40,7 +40,7 @@ cite{
 footer{
 	background-color: rgb(9, 26, 82);
 	color: rgb(9, 26, 82);
-	margin-top: 0%;
+	margin-top: 5%;
 }
 
 .navbar{
@@ -52,11 +52,13 @@ footer{
 	color: rgb(136, 136, 136);
 }
 
+a {
+	color: gray;
+}
+
 .breadcrumb {
 	margin-top: 6%;
 	margin-bottom: 6%;
 }
 
-a {
-	color: gray;
-}
+

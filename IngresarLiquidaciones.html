@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<link  rel="icon" href="img/liquidacion1.png">
+<head>
+	<meta charset="UFT-8">
+	<title>Ingresar liquidaciones</title>
+	<link rel="stylesheet " type="text/css" href="css/IngresarLiquidaciones.css">
+</head>
+<body>	
+	<h1>Ingresar Liquidaciones</h1>
+	<div id="contenedor3">
+		<input type="text" name ="idliquidacion" id="idliquidacion">
+		<label for="idliquidacion">ID Liquidacion</label>	
+		<br/></br>
+		<input type="text" name ="usuario" id="idliquidacion">
+		<label for="usuario">Usuario</label>		
+	</div>
+	<div id="contenedor">
+		<div id="contenedor4">
+			<form action="">				
+				<label for="fecha" class="etiquetas">Fecha</label>
+				<input type="date" name="fecha" >
+				<br/><br/>
+				<label for="hora" class="etiquetas">Hora</label>
+				<input type="time" name="hora">	
+				<br/><br/>	
+				<label for="numerointerno" class="etiquetas">Numero interno</label>
+				<input type="number" name="numerointerno">	
+				<br/><br/>
+				<label for="rinicial" class="etiquetas">R. inicial</label>
+				<input type="number" name="rinicial">
+				<br/><br/>
+				<label for="rfinal" class="etiquetas">R. final</label>
+				<input type="number" name="rfinal">	
+				<br/><br/>
+				<label for="ajustes" class="etiquetas">Ajustes</label>
+				<input type="number" name="ajustes">	
+				<br/><br/>
+				<label for="validaciones" class="etiquetas">Validaciones</label>
+				<input type="number" name="validaciones">
+				<br/><br/>
+				<label for="observaciones" >Obervaciones:</label>
+				<input type="text" name="observaciones" id="obervacion">
+			</form>
+		</div>
+		<div id="contenedor5">
+			<form action="">				
+				<label for="cedula" class="etiquetas2">Cedula conductor</label>
+				<input type="number" name="cedula" >
+				<br/><br/>
+				<label for="nombre" class="etiquetas2">Nombre conductor</label>
+				<input type="text" name="nombre">	
+				<br/><br/>	
+				<label for="ruta" class="etiquetas2">Ruta</label>
+				<input type="text" name="ruta">	
+				<br/><br/>
+				<label for="viajesprogramados" class="etiquetas2">Viajes programados</label>
+				<input type="number" name="viajesprogramados">
+				<br/><br/>
+				<label for="viajesperdidos" class="etiquetas2">Viajes perdidos</label>
+				<input type="number" name="viajesperdidos">	
+				<br/><br/>
+				<label for="viajesrealizados" class="etiquetas2">Viajes realizados</label>
+				<input type="number" name="viajesrealizados">	
+				<br/><br/>				
+				<label for="motivo" class="etiquetas2">Motivo</label>
+				<input type="text" name="motivo">	
+				<br/><br/>
+				<label for="valorliquidacion" class="etiquetas2">Valor liquidacion </label>
+				<input type="number" name="valorliquidacion">
+			</form>
+		</div>
+	</div>		
+	<div id="contenedor2">
+		<input type="submit"  value ="" class="menu">
+		<input type="submit" value ="" class="atras">
+		<div id="guardar">
+			<input type="submit" value ="GUARDAR" style="display: block; margin: -50px auto">
+		</div>
+		<img src="img/logotemsa.png">
+	</div>
+</body>
+</html>

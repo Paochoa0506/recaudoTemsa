@@ -39,8 +39,8 @@ cite{
 
 footer{
 	background-color: rgb(9, 26, 82);
-	color: white;
-	margin-bottom: 0%;
+	color: rgb(9, 26, 82);
+	margin-top: 5%;
 }
 
 .navbar{
@@ -56,3 +56,7 @@ a {
 	color: gray;
 }
 
+.breadcrumb {
+	margin-top: 6%;
+	margin-bottom: 6%;
+}

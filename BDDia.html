@@ -54,22 +54,8 @@
 			</ol>
 		</nav>
 
-		<ul class="nav nav-pills" id="myTab" role="tablist">
-			<li class="nav-item">
-			  <a class="nav-link active" id="liq-tab" data-toggle="pill"
-			  href="#liq" role="tab" aria-controls="liq"
-			  aria-selected="true">Liquidaciones</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" id="dia-tab" data-toggle="pill"
-			  href="#dia" role="tab" aria-controls="dia"
-			  aria-selected="false">Día</a>
-			</li>
-		</ul>
-
-		<div class="tab-content" id="myTabContent">
-			<div class="tab-pane fade show active" id="liq" role="tabpanel"
-        		aria-labelledby="liq-tab">
+		<div class="row">
+			<div class="col-8">
 				<div class="table-responsive">
 					<table class="table table-striped">
 						<thead class="thead-dark">
@@ -206,57 +192,100 @@
 								<td></td>
 								<td></td>
 							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
-
-			<div class="tab-pane fade" id="dia" role="tabpanel"
-        		aria-labelledby="dia-tab">
-
+			<div class="col-4">
 				<form>
-					<div class="form-row">
-						<div class="form-group col-sm-6">				
-							<label for="iddia">ID Día</label>
-							<input type="text" name ="iddia " class="datos" placeholder="ID Día">
-							<input type="submit" value ="" class="buscar" style="display: block; margin: 0 auto">
+					<div class="form-group row">				
+						<label for="iddia" class="col-sm-2 col-form-label">ID:</label>
+						<input type="text" name ="iddia " class="form-group" placeholder="ID Día">
+						<button type="submit" class="btn btn-secondary btn-sm">
+							<a class="nav-link" href="#">
+								<img src="node_modules/open-iconic/png/magnifying-glass-3x.png">
+							</a>
+						</button>
+					</div>
+										
+					<div class="form-group row">
+						<label for="usuario" class="col-sm-6 col-form-label">Usuario:</label>
+						<div class="col-sm-6">
+							<input type="text"  class="form-control" id="usuario" placeholder="Usuario">
 						</div>
-							<label for="usuario">Usuario:</label>
-							<input type="text"  name="usuario" class="datos">
-							<br/>
-							<label for="valordia">Valor Dia:</label>
-							<input type="text" name="valordia" class="datos">
-							<br/>
-							<label for="billetes">Billetes</label>
-							<input type="text" name="billetes" class="datos">
-							<br/>
-							<label for="numerodetiradas">Numero de tiradas</label>
-							<input type="text" name="numerodetiradas" class="datos">
-							<br/>
-							<label for="ultimat">ultima T</label>
-							<input type="text" name="ultimat" class="datos">
-							<br/>
-							<label for="monedas">Monedas</label>
-							<input type="text" name="monedas" class="datos">
-							<br/>
-							<label for="bolsa">Bolsas </label>
-							<input type="text" name="bolsa" class="datos">
-							<br/>
-							<label for="sello">Sello </label>
-							<input type="text" name="sello" class="datos">
-							<br/>		
-					</div>				
+					</div>
+					
+					<div class="form-group row">
+						<label for="valordia" class="col-sm-6 col-form-label">Valor Día:</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="valordia" placeholder="Valor Día">
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<label for="billetes" class="col-sm-6 col-form-label">Billetes:</label>
+						<div class="col-sm-6">
+							<input type="text" name="billetes" class="form-control" placeholder="Billetes">
+						</div>
+					</div>
+					
+					<div class="form-group row">						
+						<label for="numerotiradas" class="col-sm-6 col-form-label">Número de Tiradas:</label>
+						<div class="col-sm-6">
+							<input type="text" name="numerodetiradas" class="form-control" placeholder="Numero de Tiradas">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="ultimatirada" class="col-sm-6 col-form-label">Última Tirada:</label>
+						<div class="col-sm-6">
+							<input type="text" name="ultimatirada" class="form-control" placeholder="Última Tirada">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="monedas" class="col-sm-6 col-form-label">Monedas:</label>
+						<div class="col-sm-6">							
+							<input type="text" name="monedas" class="form-control" placeholder="Monedas">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="bolsa" class="col-sm-6 col-form-label">Bolsa:</label>
+						<div class="col-sm-6">							
+							<input type="text" name="bolsa" class="form-control" placeholder="Bolsa">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="sello" class="col-sm-6 col-form-label">Sello:</label>
+						<div class="col-sm-6">							
+							<input type="text" name="sello" class="form-control" placeholder="Sello">
+						</div>	
+					</div>			
 				</form>
-			</div>		
+			</div>
+		</div>
+
+		<div class="btn-group btn-group-toggle" data-toggle="buttons">
+			<label class="btn btn-light">
+				<img src="img/guardar.png" width="50" height="50">	
+			</label>
+			<label class="btn btn-light">				
+				<img src="img/imprimir.jpg" width="50" height="50">
+			</label>
 		</div>
 	</div>
-	<div id="botones">
-		<input type="submit"  value ="" class="menu">
-		<input type="submit" value ="" class="atras">
-		<div id="guardar">
-			<input type="submit" value ="GUARDAR" style="display: block; margin: -50px auto">
-		</div>		
-		<img src="img/logotemsa.png">
-	</div>
-</body>
+
+	<footer>
+		<img src="img/logotemsa.png" width="100" height="40">
+	</footer>
+	</body>
 </html>

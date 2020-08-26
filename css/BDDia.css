@@ -33,14 +33,12 @@ cite{
 	padding-left: 1px;
 }
 
-.container{
-	padding-left: 0.1px;
-}
+
 
 footer{
 	background-color: rgb(9, 26, 82);
 	color: rgb(9, 26, 82);
-	margin-top: 5%;
+	margin-top: 2%;
 }
 
 .navbar{
@@ -61,4 +59,29 @@ a {
 	margin-bottom: 6%;
 }
 
+.form-row {
+	float: right;
+}
 
+form {
+	background-color: rgb(9, 26, 82);
+	color: white;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.btn-secondary{
+	background-color:  gray;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	margin-left: 25px;
+}
+
+.btn-group {
+	margin-left: 48%;
+	margin-top: 2%;
+}

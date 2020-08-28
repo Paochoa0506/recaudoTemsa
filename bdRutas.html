@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link  rel="icon" href="img/conductor.png">
+    <link  rel="icon" href="img/ruta.png">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">    
-        <link rel="stylesheet" href="css/bdconductores.css">
+        <link rel="stylesheet" href="css/bdRutas.css">
         <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-        <title>BD Conductores</title>
+        <title>BD Rutas</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
@@ -35,9 +35,10 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="blockquote text-center">
-                    <h1 class="display-4">Base de Datos - Conductores</h1>
+                    <h1 class="display-4">Base de Datos - Rutas</h1>
                     <cite title="Source Title">
-                        Información de los Conductores registrados en la Base de Datos
+                        Información de las Rutas registradas en la Base de Datos con
+                        sus respectivas tarifas.
                     </cite>
                 </div>
             </div>
@@ -48,19 +49,19 @@
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item"><a href="menuAdmin.html">Menú Principal - Administrador</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">BD - Conductores</li>
+                  <li class="breadcrumb-item active" aria-current="page">BD - Rutas</li>
                 </ol>
             </nav>
 
-            <div class="card border-dark mb-3" style="max-width: 950px;">
+            <div class="card border-dark mb-3" style="max-width: 810px;">
                 <div class="card-header border-dark">
-                    <h5 class="card-title">Base de Datos Conductores</h5>
+                    <h5 class="card-title">Base de Datos Rutas</h5>
                 </div>
                 
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <br>
-                        <img src="img/conductor.png" class="card-img">
+                        <br><br><br>
+                        <img src="img/ruta.png" class="card-img">
                     </div>
     
                     <div class="col-md-8">
@@ -68,16 +69,16 @@
                             <p class="card-text">
                                 <form>
                                     <div class="form-group">
-                                        <label for="cedula">N° de Documento </label>
-                                        <input type="number" class="form-control" id="cedula">
+                                        <label for="id">Id Ruta</label>
+                                        <input type="number" class="form-control" id="id">
                                     </div>
                                     <div class="form-group">
-                                        <label for="nombres">Nombres </label>
-                                        <input type="text" class="form-control" id="nombres">
+                                        <label for="ruta">Nombre de Ruta</label>
+                                        <input type="text" class="form-control" id="ruta">
                                     </div>
                                     <div class="form-group">
-                                        <label for="apellidos">Apellidos </label>
-                                        <input type="text" class="form-control" id="apellidos">
+                                        <label for="tarifa">Tarifa</label>
+                                        <input type="text" class="form-control" id="tarifa">
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-sm">

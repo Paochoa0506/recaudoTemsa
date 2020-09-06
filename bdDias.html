@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">  
 	<link rel="stylesheet " type="text/css" href="css/BDDia.css">
 	<link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-	<title>Recaudo Día</title>	
+	<title>BD Día</title>	
 	
 </head>
 <body>
@@ -37,9 +37,9 @@
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
 			<div class="blockquote text-center">
-				<h1 class="display-4">Recaudo Día</h1>
+				<h1 class="display-4">Base de Datos - Día</h1>
 				<cite title="Source Title">
-					Información de las Liquidaciones registradas por el Recaudador durante el día, Cuadre de Caja Recaudo.
+					Información de las Liquidaciones registradas por el Recaudador durante el día
 				</cite>
 			</div>
 		</div>
@@ -49,8 +49,8 @@
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 			  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-			  <li class="breadcrumb-item"><a href="MenuRecaudadores.html">Menú Principal - Recaudador</a></li>
-			  <li class="breadcrumb-item active" aria-current="page">Recaudo Día</li>
+			  <li class="breadcrumb-item"><a href="menuAdmin.html">Menú Principal - Administrador</a></li>
+			  <li class="breadcrumb-item active" aria-current="page">BD - Día</li>
 			</ol>
 		</nav>
 
@@ -206,10 +206,13 @@
 			<div class="col-4">
 				<form>
 					<div class="form-group row">				
-						<label for="iddia" class="col-sm-6 col-form-label">ID:</label>
-						<div class="col-sm-6">
-							<input type="text" class="form-control" id="iddia" placeholder="ID Día">
-						</div>
+						<label for="iddia" class="col-sm-2 col-form-label">ID:</label>
+						<input type="text" name ="iddia " class="form-group" placeholder="ID Día">
+						<button type="submit" class="btn btn-secondary btn-sm">
+							<a class="nav-link" href="#">
+								<img src="node_modules/open-iconic/png/magnifying-glass-3x.png">
+							</a>
+						</button>
 					</div>
 										
 					<div class="form-group row">

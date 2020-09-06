@@ -1,83 +1,185 @@
 <!doctype html>
 <html lang="en">
-<link  rel="icon" href="img/liquidacion1.png">
-<head>
-	<meta charset="UFT-8">
-	<title>Ingresar liquidaciones</title>
-	<link rel="stylesheet " type="text/css" href="css/IngresarLiquidaciones.css">
-</head>
-<body>	
-	<h1>Ingresar Liquidaciones</h1>
-	<div id="contenedor3">
-		<input type="text" name ="idliquidacion" id="idliquidacion">
-		<label for="idliquidacion">ID Liquidacion</label>	
-		<br/></br>
-		<input type="text" name ="usuario" id="idliquidacion">
-		<label for="usuario">Usuario</label>		
-	</div>
-	<div id="contenedor">
-		<div id="contenedor4">
-			<form action="">				
-				<label for="fecha" class="etiquetas">Fecha</label>
-				<input type="date" name="fecha" >
-				<br/><br/>
-				<label for="hora" class="etiquetas">Hora</label>
-				<input type="time" name="hora">	
-				<br/><br/>	
-				<label for="numerointerno" class="etiquetas">Numero interno</label>
-				<input type="number" name="numerointerno">	
-				<br/><br/>
-				<label for="rinicial" class="etiquetas">R. inicial</label>
-				<input type="number" name="rinicial">
-				<br/><br/>
-				<label for="rfinal" class="etiquetas">R. final</label>
-				<input type="number" name="rfinal">	
-				<br/><br/>
-				<label for="ajustes" class="etiquetas">Ajustes</label>
-				<input type="number" name="ajustes">	
-				<br/><br/>
-				<label for="validaciones" class="etiquetas">Validaciones</label>
-				<input type="number" name="validaciones">
-				<br/><br/>
-				<label for="observaciones" >Obervaciones:</label>
-				<input type="text" name="observaciones" id="obervacion">
+	<link  rel="icon" href="img/liquidacion.png">
+	<head>
+		<meta charset="UFT-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">  
+		<link rel="stylesheet " type="text/css" href="css/bdLiquidaciones.css">
+		<link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+		<title>Ingreso de Liquidaciones</title>	
+	
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+			<a class="navbar-brand" href="#"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto"></ul>
+				<ul class="navbar-nav navbar-right">
+					<li class="nav-item">
+						<form>
+							<button type="submit" class="btn btn-logout">
+								<a class="nav-link" href="menuAdmin.html">
+									<img src="img/logout.png" width="25" height="25">
+									Salir
+								</a>
+							</button>
+						</form>  
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<div class="blockquote text-center">
+					<h1 class="display-4">Ingreso de Liquidaciones</h1>
+					<cite title="Source Title">
+						Formulario de ingreso de datos de las Liquidaciones.
+					</cite>
+				</div>
+			</div>
+		</div> 
+
+		<div class="container">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				  <li class="breadcrumb-item"><a href="MenuRecaudadores.html">Menú Principal - Recaudador</a></li>
+				  <li class="breadcrumb-item active" aria-current="page">Ingreso de Liquidaciones</li>
+				</ol>
+			</nav>
+
+			<form>
+				<div class="row">
+					<div class="col">
+						<label for="fecha">Fecha - Hora</label>
+						<input type="text" class="form-control" id="fecha"
+						placeholder="00-00-0000 00:00:00">
+					</div>
+					<div class="col">
+						<label for="usuario">Usuario</label>
+						<input type="text" class="form-control" id="usuario">						
+					</div>
+					<div class="col">
+						<label for="id">ID Liquidación</label>
+						<input type="number" class="form-control" id="id">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<label for="interno">Vehículo</label>
+						<input type="number" class="form-control" id="interno">
+					</div>
+					<div class="col">
+						<label for="cedula">Cédula de Conductor</label>
+						<input type="number" class="form-control" id="cedula">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<label for="inicial">Registradora Inicial</label>
+						<input type="number" class="form-control" id="inicial"
+						placeholder="0000">
+					</div>
+					<div class="col">
+						<label for="nombre">Nombre de Conductor</label>
+						<input type="text" class="form-control" id="nombre">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<label for="final">Registradora Final</label>
+						<input type="number" class="form-control" id="final"
+						placeholder="0000">
+					</div>
+					<div class="col">
+						<label for="ruta">Ruta</label>
+						<select class="form-control">
+							<option selected>---seleccionar ruta---</option>
+							<option>Ruta 3 - Comfama Tierra Amarilla - Metro</option>
+							<option>Ruta 5 - Comfama - Metro</option>
+							<option>Ruta 7 - Ferrería - Metro</option>
+							<option>San Antonio de Prado - Estrella - Metro</option>
+							<option>Tablaza - Variante - Metro</option>
+							<option>Pueblo Viejo - Metro</option>
+							<option>Bermejala - Metro</option>
+							<option>Estrella - Sabaneta</option>
+							<option>Ferrería Tablaza Urbano</option>
+							<option>Comfama Tablaza Urbano</option>
+							<option>Tarapacá Morrón</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<label for="ajuste">Ajuste Registradora</label>
+						<input type="number" class="form-control" id="ajuste"
+						placeholder="0000">
+					</div>
+					<div class="col">
+						<label for="programados">Viajes Programados</label>
+						<input type="number" class="form-control" id="programados">
+					</div>
+					<div class="col">
+						<label for="realizados">Viajes Realizados</label>
+						<input type="number" class="form-control" id="realizados">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<label for="validaciones">Validaciones Metro</label>
+						<input type="number" class="form-control" id="validaciones">
+					</div>
+					<div class="col">
+						<label for="perdidos">Viajes Perdidos</label>
+						<input type="number" class="form-control" id="perdidos">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<label for="observaciones">Observaciones</label>
+						<textarea class="form-control" id="observaciones"
+						placeholder="Escribir aquí observación"></textarea>
+					</div>
+					<div class="col">
+						<label for="motivo">Motivo Pérdida de Viajes</label>
+						<select class="form-control">
+							<option selected>---seleccionar motivo---</option>
+							<option>Taller - Mantenimiento</option>
+							<option>Incapacidad Conductor</option>
+							<option>Ausentismo Conductor</option>
+							<option>Varado</option>
+							<option>Choque</option>
+							<option>Tráfico Lento</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<label for="valor"><h4><b>Valor Liquidación</b></h4></label>
+						<input type="text" class="form-control" id="valor"
+						placeholder="$">
+					</div>
+					<div class="col">
+						<div class="btn-group-toggle" data-toggle="buttons">
+							<label class="btn btn-light">				
+								<img src="img/guardar.png" width="50" height="50">
+							</label>
+							<label class="btn btn-light">				
+								<img src="img/imprimir.jpg" width="50" height="50">
+							</label>
+						</div>
+					</div>
+				</div>
 			</form>
 		</div>
-		<div id="contenedor5">
-			<form action="">				
-				<label for="cedula" class="etiquetas2">Cedula conductor</label>
-				<input type="number" name="cedula" >
-				<br/><br/>
-				<label for="nombre" class="etiquetas2">Nombre conductor</label>
-				<input type="text" name="nombre">	
-				<br/><br/>	
-				<label for="ruta" class="etiquetas2">Ruta</label>
-				<input type="text" name="ruta">	
-				<br/><br/>
-				<label for="viajesprogramados" class="etiquetas2">Viajes programados</label>
-				<input type="number" name="viajesprogramados">
-				<br/><br/>
-				<label for="viajesperdidos" class="etiquetas2">Viajes perdidos</label>
-				<input type="number" name="viajesperdidos">	
-				<br/><br/>
-				<label for="viajesrealizados" class="etiquetas2">Viajes realizados</label>
-				<input type="number" name="viajesrealizados">	
-				<br/><br/>				
-				<label for="motivo" class="etiquetas2">Motivo</label>
-				<input type="text" name="motivo">	
-				<br/><br/>
-				<label for="valorliquidacion" class="etiquetas2">Valor liquidacion </label>
-				<input type="number" name="valorliquidacion">
-			</form>
-		</div>
-	</div>		
-	<div id="contenedor2">
-		<input type="submit"  value ="" class="menu">
-		<input type="submit" value ="" class="atras">
-		<div id="guardar">
-			<input type="submit" value ="GUARDAR" style="display: block; margin: -50px auto">
-		</div>
-		<img src="img/logotemsa.png">
-	</div>
-</body>
+		<footer>
+			<img src="img/logotemsa.png" width="100" height="40">
+		</footer>
+	</body>
 </html>

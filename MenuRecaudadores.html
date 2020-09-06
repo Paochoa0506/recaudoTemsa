@@ -1,39 +1,88 @@
-<!DOCTYPE html>
-<html lang ="en">
-	<link rel="icon" href="img/logotemsa.png" class="icono">
-	<head>
-		<meta charset ="UFT-8">
-		<title>Menu principal recaudador</title>
-		<link rel="stylesheet " type="text/css" href="css/MenuRecaudadores.css"/>		
-	</head>
-	<body>
-	<h1>Menu principal recaudador</h1>
-	
-	<div id="accesos">
-	<div id="usuario">
-	<label for="nombre">Nombre:</label>
-	</div>
-		<div id="contenedor">		
-		<div id="ingresoliquidaciones">
-			<form action="">
-				<h2>Ingresar liquidaciones</h2>	
-				<img src="img/ingreso.png"	>
-				<input type="submit" value ="Presione aqui.">
-			</form>				
-		
+<!DOCTYPE html><!-- Indica que es HTML5 -->
+<html lang="en"><!-- Para indicar lenguaje inglés --> 
+    <link  rel="icon" href="img/menu.jpg">
+    <head><!-- Encabezado -->
+        <meta charset="UTF-8"><!-- Sintaxis para caracteres especiales-->
+        <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+        <title>Menú Administrador</title>
+
+        <!-- Referencias de paquetes con etiquetas de diseño-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estiloMenuRec.css">
+        <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                  <li class="nav-item">
+                      <form>
+                        <button type="submit" class="btn btn-logout">
+                            <a class="nav-link" href="index.html">
+                                <img src="img/logout.png" width="25" height="25">Cerrar Sesión
+                            </a>
+                        </button>
+                      </form>                      
+                  </li>
+              </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <blockquote class="blockquote text-center">
+                    <h1 class="display-4"><b>Menú Principal - Recaudador</b></h1>
+                    <cite title="Source Title">
+                        Ejecución de Tareas en Recaudo.
+                    </cite>                    
+                </blockquote>               
+            </div>
+        </div>
+
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Menú Principal</li>
+                </ol>
+            </nav>
+            <div class="d-flex flex-wrap flex-row-center">
+                <div class="card card-hotel mb-3 justify-content-between ml-5">
+                    <div class="card-header">
+                        Ingresar Liquidaciones.
+                    </div>
+                    <div class="card-body">
+                        <img src="img/ingreso.png" width="300" height="300">  
+                    </div>
+                    <div>
+                        <a href="IngresarLiquidaciones.html" class="btn btn-secondary btn-lg btn-block" 
+                        role="button" aria-pressed="true">Consultar</a>
+                    </div>          
+                </div>
+                <div class="card card-hotel card mb-3 justify-content-between ml-4">
+                    <div class="card-header">
+                        Recaudo Día.
+                    </div>
+                    <div class="card-body">
+                      <img src="img/recaudo.png" width="300" height="300">  
+                    </div>
+                    <div>
+                        <a href="BDDia.html" class="btn btn-secondary btn-lg btn-block" 
+                        role="button" aria-pressed="true">Consultar</a>
+                    </div>          
+                </div>
+			</div>
 		</div>
-		<div id="recaudodia">
-			<form action="">
-				<h2>Recaudo Dia</h2>
-				<img src="img/recaudo.png">				
-				<input type="submit" value ="Presione aqui.">
-			</form>	
-		</div>
-		</div>
-		<div id="logo">
-			<img src="img/logotemsa.png">
-		</div>
-	</div>
-	
+		<footer>
+            <img src="img/logotemsa.png" width="100" height="40"> 
+        </footer>
 	</body>
 </html>	
